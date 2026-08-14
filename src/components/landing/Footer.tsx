@@ -1,0 +1,88 @@
+import { MessageSquareDot } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const columns = [
+  {
+    title: "Navegação",
+    links: [
+      { label: "Solução", href: "#solucao" },
+      { label: "CRM", href: "#crm" },
+      { label: "Recursos", href: "#recursos" },
+      { label: "Planos", href: "#planos" },
+      { label: "FAQ", href: "#faq" },
+    ],
+  },
+  {
+    title: "Acesso",
+    links: [
+      { label: "Teste grátis", href: "#planos" },
+      { label: "Entrar", href: "#planos" },
+      { label: "Fale conosco", href: "#planos" },
+      { label: "White Label", href: "#planos" },
+    ],
+  },
+  {
+    title: "Legal",
+    links: [
+      { label: "Termos de serviço", href: "#" },
+      { label: "Política de privacidade", href: "#" },
+      { label: "Privacidade Meta App", href: "#" },
+    ],
+  },
+];
+
+export function Footer() {
+  return (
+    <footer className="border-t border-border bg-card/40">
+      <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6">
+        <div className="card-surface flex flex-col items-center gap-5 p-10 text-center shadow-glow">
+          <h2 className="text-2xl font-bold sm:text-3xl">
+            Comece hoje e organize seu atendimento em minutos
+          </h2>
+          <p className="max-w-xl text-sm text-muted-foreground">
+            7 dias grátis, sem cartão de crédito. Cancele quando quiser.
+          </p>
+          <Button variant="hero" size="xl" asChild>
+            <a href="#planos">Testar grátis 7 dias</a>
+          </Button>
+        </div>
+
+        <div className="mt-14 grid gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="flex size-9 items-center justify-center rounded-xl bg-brand">
+                <MessageSquareDot className="size-5 text-primary-foreground" />
+              </span>
+              <span className="font-display text-lg font-bold">OfficeChat</span>
+            </div>
+            <p className="mt-4 max-w-xs text-sm text-muted-foreground">
+              Plataforma de multiatendimento com IA para WhatsApp, Instagram e Facebook.
+            </p>
+          </div>
+
+          {columns.map((c) => (
+            <div key={c.title}>
+              <h3 className="text-sm font-semibold">{c.title}</h3>
+              <ul className="mt-4 space-y-2.5">
+                {c.links.map((l) => (
+                  <li key={l.label}>
+                    <a
+                      href={l.href}
+                      className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {l.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-12 border-t border-border pt-6 text-xs text-muted-foreground">
+          © {new Date().getFullYear()} OfficeChat — Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  );
+}

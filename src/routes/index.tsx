@@ -1,24 +1,50 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Navbar } from "@/components/landing/Navbar";
+import { Hero } from "@/components/landing/Hero";
+import { Steps } from "@/components/landing/Steps";
+import { Pains } from "@/components/landing/Pains";
+import { Features } from "@/components/landing/Features";
+import { Comparison } from "@/components/landing/Comparison";
+import { Pricing } from "@/components/landing/Pricing";
+import { Testimonials } from "@/components/landing/Testimonials";
+import { Segments } from "@/components/landing/Segments";
+import { Faq } from "@/components/landing/Faq";
+import { Footer } from "@/components/landing/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "OfficeChat — Multiatendimento com IA para WhatsApp";
+const description =
+  "Centralize WhatsApp, Instagram e Facebook em uma tela, com CRM Kanban, agentes de IA e automações. Teste grátis 7 dias, sem cartão.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <Hero />
+        <Steps />
+        <Pains />
+        <Features />
+        <Comparison />
+        <Pricing />
+        <Testimonials />
+        <Segments />
+        <Faq />
+      </main>
+      <Footer />
     </div>
   );
 }
