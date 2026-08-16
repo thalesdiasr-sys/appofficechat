@@ -46,6 +46,7 @@ function Index() {
         <Faq />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
