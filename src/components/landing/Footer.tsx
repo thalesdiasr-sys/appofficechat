@@ -1,5 +1,5 @@
-import { MessageSquareDot } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoMark from "@/assets/logo-mark.png.asset.json";
 
 const columns = [
   {
@@ -49,11 +49,11 @@ export function Footer() {
 
         <div className="mt-14 grid gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="flex size-9 items-center justify-center rounded-xl bg-brand">
-                <MessageSquareDot className="size-5 text-primary-foreground" />
+            <div className="flex items-center gap-2.5">
+              <img src={logoMark.url} alt="OfficeChat" className="size-9" />
+              <span className="font-display text-lg font-bold lowercase tracking-tight">
+                office<span className="text-primary">chat</span>
               </span>
-              <span className="font-display text-lg font-bold">OfficeChat</span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               Plataforma de multiatendimento com IA para WhatsApp, Instagram e Facebook.
