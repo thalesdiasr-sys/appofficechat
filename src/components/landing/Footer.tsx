@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoFull from "@/assets/logo-full.png.asset.json";
+import logoMark from "@/assets/logo-mark.png.asset.json";
 
 const columns = [
   {
@@ -49,7 +49,12 @@ export function Footer() {
 
         <div className="mt-14 grid gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
-            <img src={logoFull.url} alt="OfficeChat" className="h-9 w-auto brightness-0 invert" />
+            <div className="flex items-center gap-2.5">
+              <img src={logoMark.url} alt="OfficeChat" className="size-9" />
+              <span className="font-display text-lg font-bold lowercase tracking-tight">
+                office<span className="text-primary">chat</span>
+              </span>
+            </div>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
               Plataforma de multiatendimento com IA para WhatsApp, Instagram e Facebook.
             </p>
