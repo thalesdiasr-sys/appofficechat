@@ -10,6 +10,7 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { Segments } from "@/components/landing/Segments";
 import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
+import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
 
 const title = "OfficeChat — Multiatendimento com IA para WhatsApp";
 const description =
