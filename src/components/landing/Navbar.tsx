@@ -1,6 +1,7 @@
-import { MessageSquareDot, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import logoFull from "@/assets/logo-full.png.asset.json";
 
 const links = [
   { label: "Solução", href: "#solucao" },
@@ -16,11 +17,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6">
-        <a href="#" className="flex items-center gap-2">
-          <span className="flex size-9 items-center justify-center rounded-xl bg-brand">
-            <MessageSquareDot className="size-5 text-primary-foreground" />
-          </span>
-          <span className="font-display text-lg font-bold">OfficeChat</span>
+        <a href="#" className="flex items-center gap-2" aria-label="OfficeChat">
+          <img src={logoFull.url} alt="OfficeChat" className="h-8 w-auto brightness-0 invert" />
         </a>
 
         <nav className="hidden items-center gap-7 md:flex">
