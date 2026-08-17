@@ -6,7 +6,7 @@ const rows: Array<[string, boolean, boolean, boolean]> = [
   ["CRM Kanban nativo incluso", true, false, false],
   ["Follow-up automático incluso", true, true, false],
   ["Integração nativa Mercado Pago / Asaas", true, false, false],
-  ["Teste grátis de 7 dias sem cartão", true, false, false],
+  ["Teste grátis sem cartão de crédito", true, false, false],
 ];
 
 function Cell({ ok }: { ok: boolean }) {
