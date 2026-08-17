@@ -76,34 +76,41 @@ export function Pricing() {
           {plans.map((p) => (
             <div
               key={p.name}
-              className={`card-surface relative flex flex-col p-7 ${
-                p.highlight ? "border-primary/50 shadow-glow xl:-mt-4 xl:pb-10" : ""
+              className={`card-surface relative flex flex-col p-6 transition-all duration-300 hover:scale-[1.02] ${
+                p.highlight ? "border-primary/50 shadow-glow xl:-mt-2 xl:pb-8" : "hover:border-primary/30"
               }`}
             >
               {p.highlight && (
-                <span className="bg-brand text-primary-foreground absolute -top-3 left-1/2 -translate-x-1/2 rounded-full px-3 py-1 text-xs font-semibold">
+                <span className="bg-brand text-primary-foreground absolute -top-3 left-1/2 -translate-x-1/2 rounded-full px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider">
                   Mais vendido
                 </span>
               )}
-              <span className={`h-1.5 w-10 rounded-full ${p.accent}`} />
-              <h3 className="mt-4 text-xl font-semibold">{p.name}</h3>
-              <p className="mt-4 flex items-baseline gap-1">
-                <span className="text-sm text-muted-foreground">R$</span>
-                <span className="font-display text-4xl font-bold">{p.price}</span>
-                <span className="text-sm text-muted-foreground">,00 /mês</span>
-              </p>
-              <ul className="mt-6 flex-1 space-y-3">
+              <div className="flex items-center justify-between">
+                <span className={`h-1 w-8 rounded-full ${p.accent}`} />
+                <h3 className="text-lg font-bold tracking-tight">{p.name}</h3>
+              </div>
+              
+              <div className="mt-4 flex items-baseline gap-1">
+                <span className="text-xs font-medium text-muted-foreground">R$</span>
+                <span className="font-display text-3xl font-bold tracking-tighter">{p.price}</span>
+                <span className="text-xs text-muted-foreground">,00/mês</span>
+              </div>
+
+              <div className="my-5 h-px w-full bg-border/50" />
+
+              <ul className="grid flex-1 grid-cols-2 gap-x-3 gap-y-2.5">
                 {p.features.map((f) => (
-                  <li key={f} className="flex gap-2.5 text-sm text-muted-foreground">
-                    <Check className="mt-0.5 size-4 shrink-0 text-primary" />
-                    {f}
+                  <li key={f} className="flex items-start gap-1.5 text-[11px] leading-tight text-muted-foreground/90">
+                    <Check className="mt-0.5 size-3 shrink-0 text-primary" />
+                    <span className="line-clamp-2">{f}</span>
                   </li>
                 ))}
               </ul>
+
               <Button
                 variant={p.highlight ? "hero" : "heroOutline"}
-                size="lg"
-                className="mt-7 w-full"
+                size="sm"
+                className="mt-6 w-full py-5 text-sm font-bold"
               >
                 Testar grátis 7 dias
               </Button>
