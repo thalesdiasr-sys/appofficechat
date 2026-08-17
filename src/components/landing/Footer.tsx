@@ -35,17 +35,6 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-card/40">
       <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6">
-        <div className="card-surface flex flex-col items-center gap-5 p-10 text-center shadow-glow">
-          <h2 className="text-2xl font-bold sm:text-3xl">
-            Comece hoje e organize seu atendimento em minutos
-          </h2>
-          <p className="max-w-xl text-sm text-muted-foreground">
-            2 dias grátis, sem cartão de crédito. Cancele quando quiser.
-          </p>
-          <Button variant="hero" size="xl" asChild>
-            <a href="#planos">Testar grátis 2 dias</a>
-          </Button>
-        </div>
 
         <div className="mt-14 grid gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
           <div>
