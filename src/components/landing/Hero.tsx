@@ -50,17 +50,17 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="relative mx-auto mt-14 max-w-5xl">
-          <div className="card-surface overflow-hidden p-2 shadow-glow">
-            <img
-              src={heroDashboard}
-              alt="Painel do OfficeChat com caixa de entrada unificada e CRM Kanban"
-              width={1440}
-              height={960}
-              className="w-full rounded-xl"
-            />
+          <div className="relative mx-auto mt-14 max-w-5xl">
+            <div className="rounded-2xl border border-primary/10 bg-white/50 p-2 shadow-2xl backdrop-blur-sm transition-transform duration-500 hover:scale-[1.01]">
+              <img
+                src={heroDashboard}
+                alt="Painel do OfficeChat com caixa de entrada unificada e CRM Kanban"
+                width={1440}
+                height={960}
+                className="w-full rounded-xl opacity-90 hover:opacity-100 transition-opacity"
+              />
+            </div>
           </div>
-        </div>
 
         <dl className="mx-auto mt-14 grid max-w-4xl gap-4 sm:grid-cols-3">
           {metrics.map((m) => (

@@ -127,13 +127,13 @@ export function Economy() {
         </div>
       </div>
 
-      <div className="mt-20 overflow-hidden rounded-[2.5rem] bg-foreground p-8 text-white sm:p-16 lg:p-20">
+      <div className="mt-20 overflow-hidden rounded-[2.5rem] bg-primary/5 border border-primary/10 p-8 text-foreground sm:p-16 lg:p-20">
         <div className="relative z-10 grid gap-12 lg:grid-cols-2 lg:items-center">
           <div>
-            <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
               Pare de queimar dinheiro com atendimento ineficiente
             </h3>
-            <p className="mt-6 text-lg text-white/70">
+            <p className="mt-6 text-lg text-muted-foreground">
               Nossa tecnologia permite que você reduza sua equipe de triagem e foque seus vendedores apenas no fechamento.
             </p>
             
@@ -148,15 +148,15 @@ export function Economy() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl bg-white/10 p-8 backdrop-blur-sm border border-white/10">
+            <div className="rounded-2xl bg-white p-8 shadow-sm border border-primary/10 transition-transform hover:scale-105">
               <p className="text-5xl font-bold text-primary">-75%</p>
-              <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-white/60">Custos de Operação</p>
-              <p className="mt-4 text-xs text-white/40 italic">* Média baseada em clientes OfficeChat</p>
+              <p className="mt-2 text-sm font-bold uppercase tracking-wider text-foreground/60">Custos de Operação</p>
+              <p className="mt-4 text-xs text-muted-foreground italic">* Média baseada em clientes OfficeChat</p>
             </div>
-            <div className="rounded-2xl bg-white/10 p-8 backdrop-blur-sm border border-white/10">
+            <div className="rounded-2xl bg-white p-8 shadow-sm border border-primary/10 transition-transform hover:scale-105">
               <p className="text-5xl font-bold text-primary">+300%</p>
-              <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-white/60">Produtividade</p>
-              <p className="mt-4 text-xs text-white/40 italic">* Leads qualificados por hora</p>
+              <p className="mt-2 text-sm font-bold uppercase tracking-wider text-foreground/60">Produtividade</p>
+              <p className="mt-4 text-xs text-muted-foreground italic">* Leads qualificados por hora</p>
             </div>
           </div>
         </div>
