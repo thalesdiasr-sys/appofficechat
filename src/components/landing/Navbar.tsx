@@ -37,9 +37,6 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <Button variant="ghost" size="sm" asChild>
-            <a href="https://app.officechat.com.br/login">Entrar</a>
-          </Button>
           <Button variant="hero" size="sm" asChild>
             <a href="https://app.officechat.com.br/login">Teste grátis</a>
           </Button>
