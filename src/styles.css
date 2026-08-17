@@ -206,3 +206,7 @@
 @utility shadow-glow {
   box-shadow: var(--shadow-glow);
 }
+
+@utility logo-visibility {
+  filter: brightness(0) invert(1) contrast(1);
+}
