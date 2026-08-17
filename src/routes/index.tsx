@@ -44,6 +44,7 @@ function Index() {
         <div className="bg-soft">
           <Features />
         </div>
+        <Economy />
         <Comparison />
         <Pricing />
         <div className="bg-soft">
