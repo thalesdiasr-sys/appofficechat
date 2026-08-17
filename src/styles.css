@@ -81,7 +81,7 @@
   --surface-foreground: oklch(0.2 0.01 145);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0.01 145);
-  --primary: oklch(0.62 0.17 141);
+  --primary: oklch(0.55 0.15 145);
   --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.97 0.005 145);
   --secondary-foreground: oklch(0.2 0.01 145);
@@ -92,11 +92,11 @@
   --success: oklch(0.62 0.17 141);
   --success-foreground: oklch(1 0 0);
   --warning: oklch(0.78 0.14 85);
-  --destructive: oklch(0.6 0.18 25);
+  --destructive: oklch(0.55 0.18 25);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.92 0.005 145);
-  --input: oklch(0.92 0.005 145);
-  --ring: oklch(0.62 0.17 141 / 40%);
+  --border: oklch(0.9 0.005 145);
+  --input: oklch(0.9 0.005 145);
+  --ring: oklch(0.55 0.15 145 / 30%);
   
   --gradient-hero: radial-gradient(
       100% 100% at 50% 0%,
