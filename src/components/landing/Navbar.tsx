@@ -38,10 +38,10 @@ export function Navbar() {
 
         <div className="hidden items-center gap-2 md:flex">
           <Button variant="ghost" size="sm" asChild>
-            <a href="#planos">Entrar</a>
+            <a href="https://app.officechat.com.br/login">Entrar</a>
           </Button>
           <Button variant="hero" size="sm" asChild>
-            <a href="#planos">Teste grátis</a>
+            <a href="https://app.officechat.com.br/login">Teste grátis</a>
           </Button>
         </div>
 
@@ -69,7 +69,7 @@ export function Navbar() {
             </a>
           ))}
           <Button variant="hero" className="mt-2" asChild>
-            <a href="#planos">Teste grátis</a>
+            <a href="https://app.officechat.com.br/login">Teste grátis</a>
           </Button>
         </nav>
       )}
