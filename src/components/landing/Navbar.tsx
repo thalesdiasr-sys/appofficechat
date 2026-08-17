@@ -41,7 +41,7 @@ export function Navbar() {
             <a href="#planos">Entrar</a>
           </Button>
           <Button variant="hero" size="sm" asChild>
-            <a href="#planos">Testar grátis 7 dias</a>
+            <a href="#planos">Teste grátis</a>
           </Button>
         </div>
 
@@ -69,7 +69,7 @@ export function Navbar() {
             </a>
           ))}
           <Button variant="hero" className="mt-2" asChild>
-            <a href="#planos">Testar grátis 7 dias</a>
+            <a href="#planos">Teste grátis</a>
           </Button>
         </nav>
       )}
