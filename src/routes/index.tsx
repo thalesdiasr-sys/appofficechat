@@ -4,6 +4,7 @@ import { Hero } from "@/components/landing/Hero";
 import { Steps } from "@/components/landing/Steps";
 import { Pains } from "@/components/landing/Pains";
 import { Features } from "@/components/landing/Features";
+import { Economy } from "@/components/landing/Economy";
 import { Comparison } from "@/components/landing/Comparison";
 import { Pricing } from "@/components/landing/Pricing";
 import { Testimonials } from "@/components/landing/Testimonials";
@@ -43,6 +44,7 @@ function Index() {
         <div className="bg-soft">
           <Features />
         </div>
+        <Economy />
         <Comparison />
         <Pricing />
         <div className="bg-soft">
