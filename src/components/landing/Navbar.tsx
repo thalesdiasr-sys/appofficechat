@@ -37,7 +37,7 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
-          <Button variant="hero" size="sm" asChild>
+          <Button variant="hero" size="default" className="px-8 py-6 text-base font-bold" asChild>
             <a href="https://app.officechat.com.br/login">Teste grátis</a>
           </Button>
         </div>
