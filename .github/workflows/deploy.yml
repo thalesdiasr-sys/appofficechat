@@ -32,14 +32,26 @@ jobs:
         run: bun install
 
       - name: Build Project
-        run: bunx vite build --outDir dist
+        run: bun run build
         env:
           NODE_ENV: production
 
+      - name: Detect Output Folder
+        run: |
+          if [ -d "./.output/public" ]; then
+            echo "OUT_DIR=./.output/public" >> $GITHUB_ENV
+          elif [ -d "./dist" ]; then
+            echo "OUT_DIR=./dist" >> $GITHUB_ENV
+          elif [ -d "./build" ]; then
+            echo "OUT_DIR=./build" >> $GITHUB_ENV
+          else
+            echo "Nenhuma pasta de build encontrada!" && exit 1
+          fi
+
       - name: Prepare SPA Fallback
         run: |
-          cp ./dist/index.html ./dist/404.html 2>/dev/null || true
-          touch ./dist/.nojekyll
+          cp ${{ env.OUT_DIR }}/index.html ${{ env.OUT_DIR }}/404.html 2>/dev/null || true
+          touch ${{ env.OUT_DIR }}/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -47,7 +59,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: ${{ env.OUT_DIR }}
 
       - name: Deploy to GitHub Pages
         id: deployment
