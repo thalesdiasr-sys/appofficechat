@@ -111,8 +111,9 @@ export function Pricing() {
                 variant={p.highlight ? "hero" : "heroOutline"}
                 size="sm"
                 className="mt-6 w-full py-5 text-sm font-bold"
+                asChild
               >
-                Teste grátis
+                <a href="https://app.officechat.com.br/login">Teste grátis</a>
               </Button>
             </div>
           ))}

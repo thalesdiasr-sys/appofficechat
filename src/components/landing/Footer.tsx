@@ -15,8 +15,8 @@ const columns = [
   {
     title: "Acesso",
     links: [
-      { label: "Teste grátis", href: "#planos" },
-      { label: "Entrar", href: "#planos" },
+      { label: "Teste grátis", href: "https://app.officechat.com.br/login" },
+      { label: "Entrar", href: "https://app.officechat.com.br/login" },
       { label: "Fale conosco", href: "#planos" },
       { label: "White Label", href: "#planos" },
     ],

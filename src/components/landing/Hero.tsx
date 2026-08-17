@@ -34,7 +34,7 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Button variant="hero" size="xl" asChild>
-              <a href="#planos">Teste grátis</a>
+              <a href="https://app.officechat.com.br/login">Teste grátis</a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a href="#recursos">Ver recursos</a>
