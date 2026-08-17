@@ -17,6 +17,33 @@ const title = "OfficeChat — Aumente em até 40% suas Vendas com IA Humanizada"
 const description =
   "Centralize WhatsApp, Instagram e Facebook em uma tela inteligente. IA humanizada 24h, CRM Kanban e automação de vendas. Teste grátis hoje!";
 
+const canonical = "https://officechat.com.br/";
+
+const plans = [
+  { name: "OfficeChat Starter", price: "249.00", description: "Tudo para começar a vender com IA: 3 usuários, 1 conexão e Agentes de IA." },
+  { name: "OfficeChat Pro", price: "299.00", description: "Ideal para times em crescimento: 4 usuários, 2 conexões e CRM Kanban nativo." },
+  { name: "OfficeChat Max", price: "349.00", description: "Poder total para grandes operações: 6 usuários e 3 conexões." },
+];
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "OfficeChat",
+  description:
+    "Plataforma de multiatendimento com Agentes de IA, CRM Kanban e integração com WhatsApp, Instagram e Facebook.",
+  brand: { "@type": "Brand", name: "OfficeChat" },
+  url: canonical,
+  offers: plans.map((plan) => ({
+    "@type": "Offer",
+    name: plan.name,
+    description: plan.description,
+    price: plan.price,
+    priceCurrency: "BRL",
+    availability: "https://schema.org/InStock",
+    url: canonical,
+  })),
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -25,7 +52,12 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: canonical },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: canonical }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(productSchema) },
     ],
   }),
   component: Index,
