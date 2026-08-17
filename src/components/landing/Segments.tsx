@@ -20,29 +20,28 @@ const segments = [
 ];
 
 export function Segments() {
-  // We duplicate the list to ensure the marquee loop is seamless
   const extendedSegments = [...segments, ...segments];
 
   return (
-    <section className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6">
+    <section className="mx-auto w-full max-w-7xl px-4 py-24 sm:px-6">
       <div className="text-center">
-        <h2 className="text-3xl font-bold sm:text-4xl text-foreground">Feito para o seu segmento</h2>
-        <p className="mt-3 text-base text-muted-foreground max-w-2xl mx-auto">
-          Mais de 500 empresas de diferentes ramos já atendem pelo OfficeChat e escalaram seus resultados com organização e IA.
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-5xl">Atendemos seu mercado</h2>
+        <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          Mais de 500 empresas de diversos nichos já escalaram resultados com OfficeChat.
         </p>
       </div>
 
-      <div className="relative mt-16 overflow-hidden mask-horizontal">
-        <div className="flex w-max animate-marquee gap-6 py-6">
+      <div className="relative mt-20 overflow-hidden mask-horizontal">
+        <div className="flex w-max animate-marquee gap-8 py-4">
           {extendedSegments.map((s, idx) => (
             <div
               key={`${s.name}-${idx}`}
-              className="flex items-center gap-3 rounded-2xl border border-border bg-card/50 px-8 py-5 shadow-sm backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-card hover:scale-105"
+              className="flex items-center gap-4 rounded-3xl border border-border/50 bg-white px-8 py-5 shadow-sm transition-all hover:border-brand/20 hover:scale-105"
             >
-              <span className="text-3xl" role="img" aria-label={s.name}>
+              <span className="text-4xl" role="img" aria-label={s.name}>
                 {s.emoji}
               </span>
-              <span className="whitespace-nowrap text-xl font-bold tracking-tight">
+              <span className="whitespace-nowrap text-xl font-bold tracking-tight text-foreground">
                 {s.name}
               </span>
             </div>
