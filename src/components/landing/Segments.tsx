@@ -37,10 +37,14 @@ export function Segments() {
           {extendedSegments.map((s, idx) => (
             <div
               key={`${s.name}-${idx}`}
-              className="flex items-center gap-3 rounded-2xl border border-border bg-card/50 px-8 py-5 text-lg font-semibold shadow-sm backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-card hover:scale-105"
+              className="flex items-center gap-3 rounded-2xl border border-border bg-card/50 px-8 py-5 shadow-sm backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-card hover:scale-105"
             >
-              <span className="text-2xl">{s.emoji}</span>
-              <span className="whitespace-nowrap">{s.name}</span>
+              <span className="text-3xl" role="img" aria-label={s.name}>
+                {s.emoji}
+              </span>
+              <span className="whitespace-nowrap text-xl font-bold tracking-tight">
+                {s.name}
+              </span>
             </div>
           ))}
         </div>
