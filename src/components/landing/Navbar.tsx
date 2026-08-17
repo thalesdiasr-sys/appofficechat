@@ -5,6 +5,7 @@ import logoMark from "@/assets/logo-mark.png.asset.json";
 
 const links = [
   { label: "Solução", href: "#solucao" },
+  { label: "Economia", href: "#economia" },
   { label: "CRM", href: "#crm" },
   { label: "Recursos", href: "#recursos" },
   { label: "Planos", href: "#planos" },
