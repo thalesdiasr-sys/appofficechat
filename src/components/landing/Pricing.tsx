@@ -68,7 +68,7 @@ export function Pricing() {
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold sm:text-4xl">Planos e preços</h2>
           <p className="mt-3 text-muted-foreground">
-            Todos os planos com 7 dias grátis, sem cartão de crédito e sem fidelidade.
+            Todos os planos com 2 dias grátis e sem cartão de crédito.
           </p>
         </div>
 
@@ -112,7 +112,7 @@ export function Pricing() {
                 size="sm"
                 className="mt-6 w-full py-5 text-sm font-bold"
               >
-                Testar grátis 7 dias
+                Testar grátis 2 dias
               </Button>
             </div>
           ))}

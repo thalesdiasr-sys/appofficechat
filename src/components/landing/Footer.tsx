@@ -40,10 +40,10 @@ export function Footer() {
             Comece hoje e organize seu atendimento em minutos
           </h2>
           <p className="max-w-xl text-sm text-muted-foreground">
-            7 dias grátis, sem cartão de crédito. Cancele quando quiser.
+            2 dias grátis, sem cartão de crédito. Cancele quando quiser.
           </p>
           <Button variant="hero" size="xl" asChild>
-            <a href="#planos">Testar grátis 7 dias</a>
+            <a href="#planos">Testar grátis 2 dias</a>
           </Button>
         </div>
 
