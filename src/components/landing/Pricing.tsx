@@ -3,12 +3,6 @@ import { Button } from "@/components/ui/button";
 
 const plans = [
   {
-    name: "Light",
-    price: "199",
-    accent: "bg-accent",
-    features: ["1 conexão WhatsApp (QR Code)", "Até 3 atendentes", "Até 5 departamentos"],
-  },
-  {
     name: "Starter",
     price: "249",
     accent: "bg-warning",
