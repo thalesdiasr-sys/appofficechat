@@ -10,6 +10,8 @@ const plans = [
       "1 conexão WhatsApp + Instagram + Facebook",
       "Até 5 atendentes",
       "Até 10 departamentos",
+      "Relatórios de atendimento",
+      "Suporte especializado",
     ],
   },
   {
@@ -18,10 +20,11 @@ const plans = [
     accent: "bg-primary",
     highlight: true,
     features: [
-      "WhatsApp + API Oficial Meta + Instagram + Facebook",
+      "1 conexão WhatsApp + API Oficial Meta + IG + FB",
       "Até 10 atendentes",
-      "CRM Kanban nativo",
-      "Follow-up automático",
+      "CRM Kanban nativo + Follow-up automático",
+      "IA Workflow (Agente Central)",
+      "Módulos de organização de equipe",
     ],
   },
   {
@@ -30,9 +33,11 @@ const plans = [
     accent: "bg-destructive",
     features: [
       "3 conexões WhatsApp + API Oficial Meta + IG + FB",
-      "Até 10 atendentes e 10 departamentos",
-      "CRM Kanban + follow-up automático",
-      "Módulos e integrações completas",
+      "Atendentes Ilimitados",
+      "Departamentos Ilimitados",
+      "CRM Kanban + Follow-up + Módulos & Integrações",
+      "Disparo em massa inteligente (anti-ban)",
+      "IA Workflow avançado com especialistas",
     ],
   },
 ];
