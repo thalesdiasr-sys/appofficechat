@@ -34,13 +34,12 @@ const plans = [
       "Whatsapp Oficial",
       "Facebook",
       "Instagram",
+      "CRM Kanban Nativo",
+      "Follow-up Automático",
       "Integrações",
       "Campanhas",
-      "Mensagens agendadas",
       "Chat Interno",
       "Agentes de IA",
-      "Tarefas",
-      "Produtos",
     ],
   },
   {
@@ -54,13 +53,10 @@ const plans = [
       "Whatsapp Oficial",
       "Facebook",
       "Instagram",
-      "Integrações",
-      "Campanhas",
-      "Mensagens agendadas",
-      "Chat Interno",
-      "Agentes de IA",
-      "Tarefas",
-      "Produtos",
+      "CRM Kanban + Follow-up",
+      "Módulos & Integrações Completas",
+      "Disparo em massa inteligente",
+      "IA Workflow avançado",
     ],
   },
 ];
@@ -76,7 +72,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {plans.map((p) => (
             <div
               key={p.name}
