@@ -104,6 +104,24 @@
     ),
     linear-gradient(180deg, oklch(0.99 0.004 145) 0%, oklch(1 0 0) 100%);
   --gradient-brand: linear-gradient(135deg, oklch(0.62 0.17 141) 0%, oklch(0.5 0.14 146) 100%);
+  --gradient-page: radial-gradient(
+      110% 60% at 50% 0%,
+      oklch(0.58 0.16 143 / 0.1) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      oklch(0.975 0.02 143) 0%,
+      oklch(0.99 0.01 143) 38%,
+      oklch(0.985 0.014 143) 70%,
+      oklch(0.97 0.024 143) 100%
+    );
+  --gradient-soft: linear-gradient(
+    180deg,
+    oklch(0.58 0.16 143 / 0.05) 0%,
+    oklch(0.58 0.16 143 / 0.02) 50%,
+    transparent 100%
+  );
   --gradient-card: linear-gradient(
     160deg,
     oklch(1 0 0 / 0.95) 0%,
@@ -184,6 +202,17 @@
 
 @utility bg-hero {
   background-image: var(--gradient-hero);
+}
+
+@utility bg-page {
+  background-image: var(--gradient-page);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@utility bg-soft {
+  background-image: var(--gradient-soft);
 }
 
 @utility bg-brand {
