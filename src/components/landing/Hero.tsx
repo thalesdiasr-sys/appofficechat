@@ -23,13 +23,13 @@ export function Hero() {
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/60 px-4 py-1.5 text-xs font-medium text-muted-foreground">
             Plataforma de multiatendimento com Inteligência Artificial
           </span>
-          <h1 className="mt-6 text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-6xl">
-            Aumente em até <span className="text-brand">40% suas vendas</span> organizando e
-            automatizando seu atendimento
+          <h1 className="mt-6 text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-6xl text-foreground">
+            Aumente em até <span className="text-brand">40% suas vendas</span> com IA que atende
+            seus clientes de forma humanizada e ágil
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            Centralize WhatsApp, Instagram e Facebook em uma única tela, com CRM Kanban, agentes de
-            IA e fluxos automáticos trabalhando por você.
+            Automatize seu atendimento e traga mais agilidade e retorno para sua empresa. 
+            Centralize WhatsApp, Instagram e Facebook em uma única tela com inteligência real.
           </p>
 
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
