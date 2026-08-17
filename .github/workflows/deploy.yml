@@ -36,22 +36,22 @@ jobs:
         env:
           NODE_ENV: production
 
-      - name: Detect Output Folder
+      - name: Prepare Static Artifacts
         run: |
+          # Procura a pasta de saída estática gerada pelo TanStack/Vinxi
           if [ -d "./.output/public" ]; then
-            echo "OUT_DIR=./.output/public" >> $GITHUB_ENV
+            PUB_DIR="./.output/public"
           elif [ -d "./dist" ]; then
-            echo "OUT_DIR=./dist" >> $GITHUB_ENV
-          elif [ -d "./build" ]; then
-            echo "OUT_DIR=./build" >> $GITHUB_ENV
+            PUB_DIR="./dist"
           else
-            echo "Nenhuma pasta de build encontrada!" && exit 1
+            PUB_DIR="./.output"
           fi
 
-      - name: Prepare SPA Fallback
-        run: |
-          cp ${{ env.OUT_DIR }}/index.html ${{ env.OUT_DIR }}/404.html 2>/dev/null || true
-          touch ${{ env.OUT_DIR }}/.nojekyll
+          echo "STATIC_DIR=$PUB_DIR" >> $GITHUB_ENV
+
+          # Garante o roteamento SPA e evita bloqueio de pastas com underline no GH Pages
+          cp $PUB_DIR/index.html $PUB_DIR/404.html 2>/dev/null || true
+          touch $PUB_DIR/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -59,7 +59,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.OUT_DIR }}
+          path: ${{ env.STATIC_DIR }}
 
       - name: Deploy to GitHub Pages
         id: deployment
