@@ -3,9 +3,29 @@ import { Button } from "@/components/ui/button";
 
 const plans = [
   {
+    name: "Pro",
+    price: "299",
+    accent: "bg-primary",
+    features: [
+      "4 Usuários",
+      "2 Conexões",
+      "10 Filas",
+      "Whatsapp Oficial",
+      "Facebook",
+      "Instagram",
+      "CRM Kanban Nativo",
+      "Follow-up Automático",
+      "Integrações",
+      "Campanhas",
+      "Chat Interno",
+      "Agentes de IA",
+    ],
+  },
+  {
     name: "Starter",
     price: "249",
     accent: "bg-warning",
+    highlight: true,
     features: [
       "3 Usuários",
       "1 Conexão",
@@ -20,26 +40,6 @@ const plans = [
       "Agentes de IA",
       "Tarefas",
       "Produtos",
-    ],
-  },
-  {
-    name: "Pro",
-    price: "299",
-    accent: "bg-primary",
-    highlight: true,
-    features: [
-      "4 Usuários",
-      "2 Conexões",
-      "10 Filas",
-      "Whatsapp Oficial",
-      "Facebook",
-      "Instagram",
-      "CRM Kanban Nativo",
-      "Follow-up Automático",
-      "Integrações",
-      "Campanhas",
-      "Chat Interno",
-      "Agentes de IA",
     ],
   },
   {
