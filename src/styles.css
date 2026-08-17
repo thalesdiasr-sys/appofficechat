@@ -209,5 +209,5 @@
 }
 
 @utility logo-visibility {
-  filter: brightness(0) invert(1) contrast(1);
+  filter: saturate(1.05) contrast(1.05);
 }
