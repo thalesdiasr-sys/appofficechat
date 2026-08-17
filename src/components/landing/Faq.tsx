@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "O teste grátis pede cartão de crédito?",
-    a: "Não. São 2 dias grátis com acesso completo, sem cartão e cancelando quando quiser.",
+    a: "Não. O teste é grátis com acesso completo, sem cartão e cancelando quando quiser.",
   },
 ];
 
