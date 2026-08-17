@@ -32,23 +32,14 @@ jobs:
         run: bun install
 
       - name: Build Project
-        run: bun run build
-        continue-on-error: true
+        run: bunx vite build --outDir dist
         env:
           NODE_ENV: production
 
-      - name: Fallback Build with Vite
-        run: |
-          if [ ! -d "./dist" ]; then
-            bunx vite build
-          fi
-
       - name: Prepare SPA Fallback
         run: |
-          if [ -d "./dist" ]; then
-            cp ./dist/index.html ./dist/404.html 2>/dev/null || true
-            touch ./dist/.nojekyll
-          fi
+          cp ./dist/index.html ./dist/404.html 2>/dev/null || true
+          touch ./dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
