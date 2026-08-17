@@ -31,37 +31,17 @@ jobs:
       - name: Install dependencies
         run: bun install
 
-      - name: Build Project
-        run: bun run build
+      - name: Build Static SPA
+        run: bunx vite build
         env:
           NODE_ENV: production
 
-      - name: Locate and Prepare Dist Directory
+      - name: Prepare SPA Fallback
         run: |
-          TARGET_DIR=""
-          if [ -d "./dist" ]; then
-            TARGET_DIR="./dist"
-          elif [ -d "./.output/public" ]; then
-            TARGET_DIR="./.output/public"
-          elif [ -d "./build" ]; then
-            TARGET_DIR="./build"
+          if [ -f "./dist/index.html" ]; then
+            cp ./dist/index.html ./dist/404.html
+            touch ./dist/.nojekyll
           fi
-
-          if [ -z "$TARGET_DIR" ]; then
-            echo "Pasta de build nao encontrada!" && exit 1
-          fi
-
-          # Garante a existencia do index.html para SPA no GitHub Pages
-          if [ ! -f "$TARGET_DIR/index.html" ] && [ -f "$TARGET_DIR/200.html" ]; then
-            cp "$TARGET_DIR/200.html" "$TARGET_DIR/index.html"
-          fi
-
-          # Copia index.html para 404.html para suportar rotas de SPA
-          if [ -f "$TARGET_DIR/index.html" ]; then
-            cp "$TARGET_DIR/index.html" "$TARGET_DIR/404.html"
-          fi
-
-          echo "BUILD_DIR=$TARGET_DIR" >> $GITHUB_ENV
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -69,7 +49,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ env.BUILD_DIR }}
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
