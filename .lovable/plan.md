@@ -1,28 +1,24 @@
 ---
-name: Modernize Pricing Cards
-description: Update pricing section to be more compact, modern, and visually appealing.
+name: Compact Pricing Cards
+description: Optimize pricing section to be significantly more compact and visually modern.
 type: design
 ---
 
 # Plan
 
-The user wants to modernize the pricing section, making the cards less "long" (cumprida) and more visually appealing.
+The user feels the pricing cards are still too long ("cumprida") and wants them to be even more compact and modern.
 
 ## Proposed Changes
 
-- **Layout**: Change the feature list from a single column to a multi-column layout or a more compact grid if appropriate, or simply reduce vertical spacing and font sizes.
-- **Styling**: Enhance the cards with glassmorphism, better gradients, and more distinct highlighting for the "Pro" plan.
-- **Compactness**: Group similar features or use icons to save vertical space. Limit the number of features shown initially if the list is too long, or use a "grid" for features instead of a vertical list.
+### 1. Pricing Section Optimization (`src/components/landing/Pricing.tsx`)
+- **Grid Layout for Features**: Instead of a vertical list, use a 2-column grid for features to drastically reduce card height.
+- **Tighten Spacing**: Reduce padding and margins throughout the card.
+- **Modern Typography**: Slightly reduce font sizes for features and secondary text to maintain a clean, compact look.
+- **Visual Refinement**: Enhance the glassmorphism effect and use subtle gradients to make cards look more premium.
 
-### Technical Details
+## Technical Details
 
 - Modify `src/components/landing/Pricing.tsx`.
-- Use a 2-column grid for the `ul` of features to reduce height.
-- Adjust `py` and `mt` values to tighten the layout.
-- Update the "Pro" plan's visual distinction with a more prominent gradient or glow.
-
-### User Interface Improvements
-
-- Feature items will be smaller and more compactly arranged.
-- Card height will be normalized to avoid excessive length.
-- Improved hover effects and border treatments.
+- Update the `ul` to use `grid grid-cols-2 gap-x-4 gap-y-2` (or similar) instead of `space-y-3`.
+- Reduce `p-7` to `p-6`.
+- Adjust font sizes to `text-xs` or `text-sm` where appropriate to keep elements tight.
