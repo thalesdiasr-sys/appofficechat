@@ -18,7 +18,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 sm:px-6">
         <a href="#" className="flex items-center gap-2.5" aria-label="OfficeChat">
-          <img src={logoMark.url} alt="OfficeChat" className="size-9" />
+          <img src={logoMark.url} alt="OfficeChat" className="size-9 logo-visibility" />
           <span className="font-display text-lg font-bold lowercase tracking-tight">
             office<span className="text-primary">chat</span>
           </span>
