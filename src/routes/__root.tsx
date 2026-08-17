@@ -77,14 +77,24 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "OfficeChat | Plataforma de Multiatendimento com IA" },
+      {
+        name: "description",
+        content:
+          "Centralize seu atendimento no WhatsApp, Instagram e Facebook em uma única tela com CRM Kanban e Inteligência Artificial.",
+      },
+      { name: "author", content: "OfficeChat" },
+      {
+        property: "og:title",
+        content: "OfficeChat | Plataforma de Multiatendimento com IA",
+      },
+      {
+        property: "og:description",
+        content:
+          "Centralize seu atendimento no WhatsApp, Instagram e Facebook em uma única tela com CRM Kanban e Inteligência Artificial.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -92,7 +102,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;700&display=swap",
