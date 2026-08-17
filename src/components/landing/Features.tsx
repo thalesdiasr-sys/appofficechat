@@ -1,84 +1,95 @@
-import { MessagesSquare, KanbanSquare, Megaphone, Bot, Workflow } from "lucide-react";
+import { MessagesSquare, KanbanSquare, Megaphone, Bot, Workflow, Zap } from "lucide-react";
 
 const features = [
   {
     id: "recursos",
     icon: MessagesSquare,
-    title: "Multiatendimento multicanal",
+    title: "Multiatendimento Pro",
     items: [
-      "WhatsApp por QR Code ou API Oficial da Meta",
-      "Instagram Direct e Facebook Messenger na mesma caixa",
-      "Histórico unificado por cliente",
-      "Multiusuário, filas e departamentos",
+      "WhatsApp, Instagram e Facebook",
+      "API Oficial da Meta inclusa",
+      "Multiusuário e Departamentos",
+      "Histórico Unificado 360°",
     ],
   },
   {
     id: "crm",
     icon: KanbanSquare,
-    title: "CRM Kanban nativo",
+    title: "CRM Kanban Nativo",
     items: [
       "Funil visual arrastar e soltar",
-      "Cards com etapa, valor, temperatura e responsável",
-      "Múltiplos Kanbans: Vendas, Suporte e Pós-venda",
-      "Relatórios de conversão por etapa",
+      "Múltiplos pipelines por setor",
+      "Valor e temperatura do lead",
+      "Follow-up Automático nativo",
     ],
   },
   {
     icon: Megaphone,
-    title: "Disparo em massa inteligente",
+    title: "Disparos Inteligentes",
     items: [
-      "Até 90% menos risco de banimento com comportamento natural",
-      "Variações automáticas da mensagem e rotação de números",
-      "Intervalos randomizados e segmentação por tag ou lista",
-      "Anexos de imagem, vídeo, áudio e arquivos",
+      "Comportamento humano (anti-ban)",
+      "Rotação de números automática",
+      "Segmentação por tags e listas",
+      "Anexos de mídia completos",
     ],
   },
   {
     icon: Bot,
-    title: "Agentes de IA",
+    title: "Agentes de IA Treináveis",
     items: [
-      "Atendimento e qualificação automática 24h por dia",
-      "Treinamento com produtos, catálogo, PDFs e site",
-      "IA Workflow com agente central e especialistas",
+      "Atendimento 24h humanizado",
+      "Treinamento via PDF, Site e Texto",
+      "Qualificação de leads automática",
+      "Transferência para humanos",
     ],
   },
   {
     icon: Workflow,
-    title: "Construtor de fluxos no-code",
+    title: "Workflow Automação",
     items: [
-      "Editor visual de arrastar blocos",
-      'Gatilhos por palavra-chave (ex: digitou "preço")',
-      "Mensagens agendadas e follow-up automático",
-      "Roteamento inteligente entre setores",
+      "Editor visual no-code intuitivo",
+      "Gatilhos por palavra-chave",
+      "Agendamento de mensagens",
+      "Webhooks e integrações",
+    ],
+  },
+  {
+    icon: Zap,
+    title: "Escalabilidade Real",
+    items: [
+      "Sem limite de conversas",
+      "Dashboard de métricas em tempo real",
+      "Relatórios de performance",
+      "App Mobile (PWA) incluso",
     ],
   },
 ];
 
 export function Features() {
   return (
-    <section className="relative mx-auto w-full max-w-7xl px-4 py-20 sm:px-6">
+    <section className="relative mx-auto w-full max-w-7xl px-4 py-24 sm:px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold sm:text-4xl">Tudo que seu atendimento precisa</h2>
-        <p className="mt-3 text-muted-foreground">
-          Recursos criados para equipes que vendem por mensagem todos os dias.
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-5xl">Poder total de automação</h2>
+        <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+          Recursos projetados para empresas que levam a sério as vendas por mensagem.
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {features.map((f) => (
           <article
             key={f.title}
             id={f.id}
-            className="card-surface scroll-mt-24 p-7 transition-shadow hover:shadow-glow"
+            className="group relative flex flex-col rounded-[2.5rem] border border-border/50 bg-white p-8 transition-all hover:border-brand/20 hover:shadow-xl hover:shadow-brand/5 scroll-mt-24"
           >
-            <span className="flex size-11 items-center justify-center rounded-xl bg-primary/12 ring-1 ring-primary/25">
-              <f.icon className="size-5 text-primary" />
-            </span>
-            <h3 className="mt-5 text-lg font-semibold">{f.title}</h3>
-            <ul className="mt-4 space-y-2.5">
+            <div className="flex size-12 items-center justify-center rounded-2xl bg-surface transition-colors group-hover:bg-brand/10">
+              <f.icon className="size-6 text-foreground transition-colors group-hover:text-brand" />
+            </div>
+            <h3 className="mt-6 text-xl font-bold text-foreground">{f.title}</h3>
+            <ul className="mt-6 space-y-3 flex-1">
               {f.items.map((i) => (
-                <li key={i} className="flex gap-2.5 text-sm text-muted-foreground">
-                  <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-primary" />
+                <li key={i} className="flex items-center gap-3 text-sm font-medium text-muted-foreground">
+                  <span className="size-1 rounded-full bg-brand/30" />
                   {i}
                 </li>
               ))}
