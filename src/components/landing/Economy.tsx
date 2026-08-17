@@ -148,15 +148,15 @@ export function Economy() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <div className="rounded-2xl bg-white p-8 shadow-sm border border-primary/10 transition-transform hover:scale-105">
-              <p className="text-5xl font-bold text-primary">-75%</p>
-              <p className="mt-2 text-sm font-bold uppercase tracking-wider text-foreground/60">Custos de Operação</p>
-              <p className="mt-4 text-xs text-muted-foreground italic">* Média baseada em clientes OfficeChat</p>
+            <div className="rounded-[2rem] bg-white p-8 shadow-sm border border-primary/10 transition-transform hover:scale-105 flex flex-col items-center text-center">
+              <p className="text-6xl font-bold text-primary mb-4 tracking-tighter">-75%</p>
+              <p className="text-sm font-bold uppercase tracking-wider text-foreground/60 leading-tight mb-4">CUSTOS DE<br/>OPERAÇÃO</p>
+              <p className="text-xs text-muted-foreground italic mt-auto">* Média baseada em clientes OfficeChat</p>
             </div>
-            <div className="rounded-2xl bg-white p-8 shadow-sm border border-primary/10 transition-transform hover:scale-105">
-              <p className="text-5xl font-bold text-primary">+300%</p>
-              <p className="mt-2 text-sm font-bold uppercase tracking-wider text-foreground/60">Produtividade</p>
-              <p className="mt-4 text-xs text-muted-foreground italic">* Leads qualificados por hora</p>
+            <div className="rounded-[2rem] bg-white p-8 shadow-sm border border-primary/10 transition-transform hover:scale-105 flex flex-col items-center text-center">
+              <p className="text-6xl font-bold text-primary mb-4 tracking-tighter">+300%</p>
+              <p className="text-sm font-bold uppercase tracking-wider text-foreground/60 leading-tight mb-4">PRODUTIVIDADE</p>
+              <p className="text-xs text-muted-foreground italic mt-auto">* Leads qualificados por hora</p>
             </div>
           </div>
         </div>
