@@ -1,4 +1,7 @@
 import logoMark from "@/assets/logo-mark.png.asset.json";
+import termsPdf from "@/assets/termos-de-servico-officechat.pdf.asset.json";
+import privacyPdf from "@/assets/politica-de-privacidade-officechat.pdf.asset.json";
+import metaPrivacyPdf from "@/assets/politica-de-privacidade-meta-app-officechat.pdf.asset.json";
 
 const columns = [
   {
@@ -22,9 +25,9 @@ const columns = [
   {
     title: "Legal",
     links: [
-      { label: "Termos de uso", href: "#" },
-      { label: "Privacidade", href: "#" },
-      { label: "Meta Compliance", href: "#" },
+      { label: "Termos de Serviço", href: termsPdf.url },
+      { label: "Política de Privacidade", href: privacyPdf.url },
+      { label: "Privacidade Meta App", href: metaPrivacyPdf.url },
     ],
   },
 ];
