@@ -11,8 +11,9 @@ export function TermsOfService() {
         
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-tight">Termos de Uso</h1>
-            <p className="text-muted-foreground">Última atualização: 19 de agosto de 2026</p>
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-tight">Termos de Serviço</h1>
+            <p className="text-muted-foreground">Regras e condições para o uso do aplicativo OfficeChat com integrações da Meta (Facebook e Instagram).</p>
+            <p className="text-muted-foreground mt-2">Última atualização: 19 de agosto de 2026</p>
           </div>
           
           <div className="card-surface p-8 md:p-12 prose prose-slate max-w-none shadow-glow">
