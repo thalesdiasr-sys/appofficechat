@@ -61,6 +61,8 @@ export function Footer() {
                     <li key={l.label}>
                       <a
                         href={l.href}
+                        target={l.href.startsWith("http") || l.href.includes(".pdf") ? "_blank" : undefined}
+                        rel={l.href.startsWith("http") || l.href.includes(".pdf") ? "noopener noreferrer" : undefined}
                         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                       >
                         {l.label}
