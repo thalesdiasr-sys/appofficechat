@@ -3,14 +3,21 @@ import { Footer } from "@/components/landing/Footer";
 
 export function TermsOfService() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-page">
       <Navbar />
-      <main className="pt-32 pb-20 px-4 sm:px-6">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl font-display font-bold text-foreground mb-4">Termos de Serviço</h1>
-          <p className="text-muted-foreground mb-8">Última atualização: 19 de agosto de 2026</p>
+      <main className="pt-32 pb-20 px-4 sm:px-6 relative overflow-hidden">
+        {/* Decorative background element */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-primary/5 blur-3xl rounded-full -z-10" />
+        
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-tight">Termos de Uso</h1>
+            <p className="text-muted-foreground">Última atualização: 19 de agosto de 2026</p>
+          </div>
           
-          <div className="prose prose-slate max-w-none space-y-8">
+          <div className="card-surface p-8 md:p-12 prose prose-slate max-w-none shadow-glow">
+          
+          <div className="space-y-12">
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">1. Introdução</h2>
               <p className="text-muted-foreground leading-relaxed">
@@ -103,6 +110,7 @@ export function TermsOfService() {
                 <p className="font-bold text-foreground">Site: <a href="https://officechat.com.br" className="text-primary hover:underline">officechat.com.br</a></p>
               </div>
             </section>
+            </div>
           </div>
         </div>
       </main>
