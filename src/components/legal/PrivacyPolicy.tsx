@@ -151,13 +151,13 @@ export function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">13. Contato</h2>
               <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
-                <p className="text-foreground font-semibold mb-2">Dúvidas sobre privacidade?</p>
+                <p className="text-foreground font-semibold mb-2">Fale com a gente</p>
                 <p className="text-muted-foreground leading-relaxed">
                   Para dúvidas ou solicitações relacionadas à privacidade, entre em contato:
                 </p>
                 <div className="mt-4 space-y-1">
                   <p className="text-muted-foreground">
-                    <span className="font-medium text-foreground">E-mail:</span> sac@officechat.com.br
+                    <span className="font-medium text-foreground">E-mail:</span> contato@officechat.com.br
                   </p>
                   <p className="text-muted-foreground">
                     <span className="font-medium text-foreground">Site:</span> officechat.com.br
