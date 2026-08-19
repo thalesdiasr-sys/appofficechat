@@ -1,4 +1,7 @@
 import logoMark from "@/assets/logo-mark.png.asset.json";
+import termsPdf from "@/assets/termos-de-servico-officechat.pdf.asset.json";
+import privacyPdf from "@/assets/politica-de-privacidade-officechat.pdf.asset.json";
+import metaPrivacyPdf from "@/assets/politica-de-privacidade-meta-app-officechat.pdf.asset.json";
 
 const columns = [
   {
@@ -22,9 +25,9 @@ const columns = [
   {
     title: "Legal",
     links: [
-      { label: "Termos de uso", href: "#" },
-      { label: "Privacidade", href: "#" },
-      { label: "Meta Compliance", href: "#" },
+      { label: "Termos de Serviço", href: "/termos-de-servico" },
+      { label: "Política de Privacidade", href: "/politica-de-privacidade" },
+      { label: "Privacidade Meta App", href: "/privacidade-meta-app" },
     ],
   },
 ];
@@ -58,6 +61,8 @@ export function Footer() {
                     <li key={l.label}>
                       <a
                         href={l.href}
+                        target={l.href.startsWith("http") || l.href.includes(".pdf") ? "_blank" : undefined}
+                        rel={l.href.startsWith("http") || l.href.includes(".pdf") ? "noopener noreferrer" : undefined}
                         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
                       >
                         {l.label}
