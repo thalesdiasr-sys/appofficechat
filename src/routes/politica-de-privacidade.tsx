@@ -1,9 +1,12 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
-import privacyPdf from "@/assets/politica-de-privacidade-officechat.pdf.asset.json";
+import { createFileRoute } from "@tanstack/react-router";
+import { PrivacyPolicy } from "@/components/legal/PrivacyPolicy";
 
 export const Route = createFileRoute("/politica-de-privacidade")({
-  beforeLoad: () => {
-    throw redirect({ href: privacyPdf.url });
-  },
-  component: () => null,
+  head: () => ({
+    meta: [
+      { title: "Política de Privacidade — OfficeChat" },
+      { name: "description", content: "Saiba como o OfficeChat protege seus dados e respeita sua privacidade conforme a LGPD." },
+    ],
+  }),
+  component: PrivacyPolicy,
 });
