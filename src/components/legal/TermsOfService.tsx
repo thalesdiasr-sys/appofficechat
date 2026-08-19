@@ -20,7 +20,7 @@ export function TermsOfService() {
           
           <div className="space-y-12">
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">1. Introdução</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Introdução</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Estes Termos de Serviço (“Termos”) regulam o uso do aplicativo OfficeChat, que possibilita a integração de plataformas externas para envio e recebimento de mensagens pelo Direct do Facebook e Instagram, através das APIs oficiais da Meta.
               </p>
@@ -30,7 +30,7 @@ export function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">2. Uso do Serviço</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Uso do Serviço</h2>
               <p className="text-muted-foreground leading-relaxed">
                 O OfficeChat é destinado a empresas e profissionais que desejam integrar suas plataformas externas de comunicação com o Direct do Instagram e Messenger.
               </p>
@@ -43,7 +43,7 @@ export function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">3. Cadastro e Autenticação</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Cadastro e Autenticação</h2>
               <p className="text-muted-foreground leading-relaxed">
                 Para utilizar o serviço, o usuário deve autorizar o acesso do OfficeChat às suas contas do Facebook/Instagram por meio do processo de autenticação oficial da Meta.
               </p>
@@ -53,7 +53,7 @@ export function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">4. Responsabilidades do Usuário</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Responsabilidades do Usuário</h2>
               <p className="text-muted-foreground leading-relaxed">
                 O usuário se compromete a:
               </p>
@@ -65,7 +65,7 @@ export function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">5. Limitações de Responsabilidade</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Limitações de Responsabilidade</h2>
               <p className="text-muted-foreground leading-relaxed">
                 O OfficeChat atua apenas como intermediador técnico entre plataformas externas e a API da Meta.
               </p>
@@ -78,21 +78,21 @@ export function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">6. Privacidade e Dados</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Privacidade e Dados</h2>
               <p className="text-muted-foreground leading-relaxed">
                 O tratamento de dados pessoais segue as diretrizes descritas na nossa Política de Privacidade. Ao utilizar o serviço, o usuário concorda com a coleta e uso de informações conforme estabelecido naquele documento.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">7. Alterações e Atualizações</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Alterações e Atualizações</h2>
               <p className="text-muted-foreground leading-relaxed">
                 O OfficeChat pode modificar ou atualizar estes Termos de Serviço a qualquer momento. Alterações relevantes serão comunicadas aos usuários antes de entrarem em vigor.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">8. Encerramento do Serviço</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Encerramento do Serviço</h2>
               <p className="text-muted-foreground leading-relaxed">
                 O usuário pode encerrar o uso do OfficeChat a qualquer momento, revogando as permissões concedidas pelo painel do Facebook/Instagram.
               </p>
@@ -102,7 +102,7 @@ export function TermsOfService() {
             </section>
 
             <section>
-              <h2 className="text-2xl font-bold text-foreground mb-4">9. Contato</h2>
+              <h2 className="text-2xl font-bold text-foreground mb-4">Contato</h2>
               <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
                 <p className="text-foreground font-semibold mb-2">Fale com a gente</p>
                 <p className="text-muted-foreground leading-relaxed">

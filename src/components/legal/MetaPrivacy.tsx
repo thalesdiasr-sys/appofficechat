@@ -20,7 +20,7 @@ export function MetaPrivacy() {
           <div className="card-surface p-8 md:p-12 prose prose-slate max-w-none shadow-glow">
             <div className="space-y-12">
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">1. Introdução</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Introdução</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Esta Política de Privacidade descreve como o OfficeChat coleta, utiliza e protege as informações dos usuários ao integrar plataformas externas com o Direct do Facebook e Instagram, por meio das permissões concedidas no Meta for Developers.
                 </p>
@@ -30,7 +30,7 @@ export function MetaPrivacy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">2. Coleta de Informações</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Coleta de Informações</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Nosso aplicativo pode coletar os seguintes dados:
                 </p>
@@ -45,7 +45,7 @@ export function MetaPrivacy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">3. Uso das Informações</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Uso das Informações</h2>
                 <p className="text-muted-foreground leading-relaxed">As informações coletadas são utilizadas para:</p>
                 <ul className="list-disc pl-6 mt-4 space-y-2 text-muted-foreground">
                   <li>Permitir que plataformas externas enviem e recebam mensagens no Direct do Instagram e Messenger.</li>
@@ -59,7 +59,7 @@ export function MetaPrivacy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">4. Compartilhamento de Informações</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Compartilhamento de Informações</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   As informações são compartilhadas apenas com:
                 </p>
@@ -71,7 +71,7 @@ export function MetaPrivacy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">5. Armazenamento e Segurança</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Armazenamento e Segurança</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Os dados são armazenados de forma segura, com criptografia e protocolos de proteção atualizados.
                 </p>
@@ -84,7 +84,7 @@ export function MetaPrivacy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">6. Direitos do Usuário</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Direitos do Usuário</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   De acordo com a LGPD (Lei Geral de Proteção de Dados – Brasil) e regulamentações internacionais (como GDPR, quando aplicável), os usuários têm direito a:
                 </p>
@@ -96,21 +96,21 @@ export function MetaPrivacy() {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">7. Cookies e Tecnologias Semelhantes</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Cookies e Tecnologias Semelhantes</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   O OfficeChat não utiliza cookies para rastrear usuários. Tecnologias semelhantes podem ser empregadas apenas para autenticação segura e funcionamento da API da Meta.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">8. Alterações nesta Política</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Alterações nesta Política</h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Podemos atualizar esta Política de Privacidade periodicamente. Alterações relevantes serão notificadas aos usuários antes de entrarem em vigor.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold text-foreground mb-4">9. Contato</h2>
+                <h2 className="text-2xl font-bold text-foreground mb-4">Contato</h2>
                 <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
                   <p className="text-foreground font-semibold mb-2">Fale com a gente</p>
                   <p className="text-muted-foreground leading-relaxed">
