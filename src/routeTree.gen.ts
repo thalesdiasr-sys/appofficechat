@@ -10,11 +10,24 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PoliticaDePrivacidadeRouteImport } from './routes/politica-de-privacidade'
+import { Route as PrivacidadeMetaAppRouteImport } from './routes/privacidade-meta-app'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as TermosDeServicoRouteImport } from './routes/termos-de-servico'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PoliticaDePrivacidadeRoute = PoliticaDePrivacidadeRouteImport.update({
+  id: '/politica-de-privacidade',
+  path: '/politica-de-privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacidadeMetaAppRoute = PrivacidadeMetaAppRouteImport.update({
+  id: '/privacidade-meta-app',
+  path: '/privacidade-meta-app',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -22,31 +35,64 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TermosDeServicoRoute = TermosDeServicoRouteImport.update({
+  id: '/termos-de-servico',
+  path: '/termos-de-servico',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/privacidade-meta-app': typeof PrivacidadeMetaAppRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/termos-de-servico': typeof TermosDeServicoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/privacidade-meta-app': typeof PrivacidadeMetaAppRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/termos-de-servico': typeof TermosDeServicoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/politica-de-privacidade': typeof PoliticaDePrivacidadeRoute
+  '/privacidade-meta-app': typeof PrivacidadeMetaAppRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/termos-de-servico': typeof TermosDeServicoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/sitemap.xml'
+  fullPaths:
+    | '/'
+    | '/politica-de-privacidade'
+    | '/privacidade-meta-app'
+    | '/sitemap.xml'
+    | '/termos-de-servico'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/sitemap.xml'
-  id: '__root__' | '/' | '/sitemap.xml'
+  to:
+    | '/'
+    | '/politica-de-privacidade'
+    | '/privacidade-meta-app'
+    | '/sitemap.xml'
+    | '/termos-de-servico'
+  id:
+    | '__root__'
+    | '/'
+    | '/politica-de-privacidade'
+    | '/privacidade-meta-app'
+    | '/sitemap.xml'
+    | '/termos-de-servico'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  PoliticaDePrivacidadeRoute: typeof PoliticaDePrivacidadeRoute
+  PrivacidadeMetaAppRoute: typeof PrivacidadeMetaAppRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TermosDeServicoRoute: typeof TermosDeServicoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +104,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/politica-de-privacidade': {
+      id: '/politica-de-privacidade'
+      path: '/politica-de-privacidade'
+      fullPath: '/politica-de-privacidade'
+      preLoaderRoute: typeof PoliticaDePrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacidade-meta-app': {
+      id: '/privacidade-meta-app'
+      path: '/privacidade-meta-app'
+      fullPath: '/privacidade-meta-app'
+      preLoaderRoute: typeof PrivacidadeMetaAppRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -65,12 +125,22 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/termos-de-servico': {
+      id: '/termos-de-servico'
+      path: '/termos-de-servico'
+      fullPath: '/termos-de-servico'
+      preLoaderRoute: typeof TermosDeServicoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  PoliticaDePrivacidadeRoute: PoliticaDePrivacidadeRoute,
+  PrivacidadeMetaAppRoute: PrivacidadeMetaAppRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TermosDeServicoRoute: TermosDeServicoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

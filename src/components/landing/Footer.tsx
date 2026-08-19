@@ -25,9 +25,9 @@ const columns = [
   {
     title: "Legal",
     links: [
-      { label: "Termos de Serviço", href: termsPdf.url },
-      { label: "Política de Privacidade", href: privacyPdf.url },
-      { label: "Privacidade Meta App", href: metaPrivacyPdf.url },
+      { label: "Termos de Serviço", href: "/termos-de-servico" },
+      { label: "Política de Privacidade", href: "/politica-de-privacidade" },
+      { label: "Privacidade Meta App", href: "/privacidade-meta-app" },
     ],
   },
 ];
