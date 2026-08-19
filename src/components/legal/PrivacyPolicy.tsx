@@ -167,6 +167,7 @@ export function PrivacyPolicy() {
             </section>
           </div>
         </div>
+      </div>
       </main>
       <Footer />
     </div>
