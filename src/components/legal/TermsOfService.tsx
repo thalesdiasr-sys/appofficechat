@@ -103,13 +103,19 @@ export function TermsOfService() {
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">9. Contato</h2>
-              <h3 className="text-xl font-bold text-foreground mb-4 italic">Fale com a gente</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Se você tiver dúvidas ou solicitações relacionadas a estes Termos de Serviço, entre em contato:
-              </p>
-              <div className="mt-4 p-6 bg-surface rounded-2xl border border-border">
-                <p className="font-bold text-foreground">E-mail: <a href="mailto:contato@officechat.com.br" className="text-primary hover:underline">contato@officechat.com.br</a></p>
-                <p className="font-bold text-foreground">Site: <a href="https://officechat.com.br" className="text-primary hover:underline">officechat.com.br</a></p>
+              <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
+                <p className="text-foreground font-semibold mb-2">Fale com a gente</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Se você tiver dúvidas ou solicitações relacionadas a estes Termos de Serviço, entre em contato:
+                </p>
+                <div className="mt-4 space-y-1">
+                  <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">E-mail:</span> contato@officechat.com.br
+                  </p>
+                  <p className="text-muted-foreground">
+                    <span className="font-medium text-foreground">Site:</span> officechat.com.br
+                  </p>
+                </div>
               </div>
             </section>
             </div>
