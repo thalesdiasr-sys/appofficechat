@@ -1,9 +1,12 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
-import termsPdf from "@/assets/termos-de-servico-officechat.pdf.asset.json";
+import { createFileRoute } from "@tanstack/react-router";
+import { TermsOfService } from "@/components/legal/TermsOfService";
 
 export const Route = createFileRoute("/termos-de-servico")({
-  beforeLoad: () => {
-    throw redirect({ href: termsPdf.url });
-  },
-  component: () => null,
+  head: () => ({
+    meta: [
+      { title: "Termos de Serviço — OfficeChat" },
+      { name: "description", content: "Regras e condições de uso da plataforma OfficeChat e suas integrações." },
+    ],
+  }),
+  component: TermsOfService,
 });

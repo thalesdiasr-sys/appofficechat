@@ -1,9 +1,12 @@
-import { createFileRoute, redirect } from "@tanstack/react-router";
-import metaPrivacyPdf from "@/assets/politica-de-privacidade-meta-app-officechat.pdf.asset.json";
+import { createFileRoute } from "@tanstack/react-router";
+import { MetaPrivacy } from "@/components/legal/MetaPrivacy";
 
 export const Route = createFileRoute("/privacidade-meta-app")({
-  beforeLoad: () => {
-    throw redirect({ href: metaPrivacyPdf.url });
-  },
-  component: () => null,
+  head: () => ({
+    meta: [
+      { title: "Privacidade Meta App — OfficeChat" },
+      { name: "description", content: "Termos específicos para a integração do OfficeChat com APIs da Meta (Facebook e Instagram)." },
+    ],
+  }),
+  component: MetaPrivacy,
 });
