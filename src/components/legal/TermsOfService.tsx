@@ -102,6 +102,7 @@ export function TermsOfService() {
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">9. Contato</h2>
+              <h3 className="text-xl font-bold text-foreground mb-4 italic">Fale com a gente</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Se você tiver dúvidas ou solicitações relacionadas a estes Termos de Serviço, entre em contato:
               </p>
