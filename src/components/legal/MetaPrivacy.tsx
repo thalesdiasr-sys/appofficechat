@@ -11,7 +11,7 @@ export function MetaPrivacy() {
         
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-tight">Meta Compliance</h1>
+            <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4 tracking-tight">Privacidade Meta App</h1>
             <p className="text-muted-foreground">Última atualização: 19 de agosto de 2026</p>
           </div>
           
