@@ -264,3 +264,7 @@
     transparent
   );
 }
+
+#lovable-badge {
+  display: none !important;
+}
