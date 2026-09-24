@@ -161,7 +161,8 @@ export function Hero() {
           </div>
           
           <h1 className="mt-8 text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl text-foreground tracking-tight">
-            Plataforma de Atendimento Multicanal com <span className="text-brand">Inteligência Artificial</span>
+            Aumente em até <span className="text-brand">40% suas vendas</span> com IA que atende de forma humanizada
+            <span className="sr-only"> — Plataforma de Atendimento Multicanal com Inteligência Artificial</span>
           </h1>
           
           <p className="mt-8 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
