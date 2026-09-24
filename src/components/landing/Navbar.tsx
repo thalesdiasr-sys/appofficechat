@@ -28,7 +28,7 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 sm:px-6">
-        <a href="/" className="flex items-center gap-2.5 transition-transform hover:scale-105" aria-label="Página inicial do OfficeChat">
+        <a href="#" className="flex items-center gap-2.5 transition-transform hover:scale-105" aria-label="Página inicial do OfficeChat">
           <img src={logoMark.url} alt="Logo do OfficeChat, plataforma de atendimento multicanal com inteligência artificial" className="size-9 logo-visibility" />
           <span className="font-display text-lg font-bold lowercase tracking-tight">
             office<span className="text-primary">chat</span>
