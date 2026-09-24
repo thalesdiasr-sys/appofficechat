@@ -27,7 +27,7 @@ function FakeDashboard() {
                 <Bot className="size-5" />
               </div>
               <div>
-                <h4 className="text-sm font-bold text-foreground">OfficeChat AI</h4>
+                <p className="text-sm font-bold text-foreground">OfficeChat AI</p>
                 <div className="flex items-center gap-1.5">
                   <span className="size-2 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider">Agente Ativo</span>
@@ -161,7 +161,7 @@ export function Hero() {
           </div>
           
           <h1 className="mt-8 text-4xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl text-foreground tracking-tight">
-            Aumente em até <span className="text-brand">40% suas vendas</span> com IA que atende de forma humanizada
+            Plataforma de Atendimento Multicanal com <span className="text-brand">Inteligência Artificial</span>
           </h1>
           
           <p className="mt-8 text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">

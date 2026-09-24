@@ -13,9 +13,9 @@ import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
 import { WhatsAppFloat } from "@/components/landing/WhatsAppFloat";
 
-const title = "OfficeChat — Aumente em até 40% suas Vendas com IA Humanizada";
+const title = "OfficeChat | Plataforma de Atendimento com IA, WhatsApp e CRM Kanban";
 const description =
-  "Centralize WhatsApp, Instagram e Facebook em uma tela inteligente. IA humanizada 24h, CRM Kanban e automação de vendas. Teste grátis hoje!";
+  "Centralize seu atendimento multicanal com o OfficeChat. Plataforma SaaS completa com inteligência artificial, CRM Kanban integrado e automação para WhatsApp.";
 
 const canonical = "https://officechat.com.br/";
 
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: canonical },
+      { property: "og:url", content: "https://officechat.com.br" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: canonical }],

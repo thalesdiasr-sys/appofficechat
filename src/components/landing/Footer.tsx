@@ -39,8 +39,8 @@ export function Footer() {
       <div className="mx-auto w-full max-w-7xl px-4 py-20 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <a href="#" className="flex items-center gap-2.5 transition-transform hover:scale-105 w-fit">
-              <img src={logoMark.url} alt="OfficeChat" className="size-9 logo-visibility" />
+            <a href="/" className="flex items-center gap-2.5 transition-transform hover:scale-105 w-fit" aria-label="Página inicial do OfficeChat">
+              <img src={logoMark.url} alt="Logo do OfficeChat, plataforma de atendimento multicanal com inteligência artificial e CRM Kanban" className="size-9 logo-visibility" />
               <span className="font-display text-xl font-bold lowercase tracking-tight">
                 office<span className="text-primary">chat</span>
               </span>
