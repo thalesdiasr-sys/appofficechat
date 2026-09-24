@@ -77,21 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "OfficeChat | Plataforma de Multiatendimento com IA" },
+      { title: "OfficeChat | Plataforma de Atendimento com IA, WhatsApp e CRM Kanban" },
       {
         name: "description",
         content:
-          "Centralize seu atendimento no WhatsApp, Instagram e Facebook em uma única tela com CRM Kanban e Inteligência Artificial.",
+          "Centralize seu atendimento multicanal com o OfficeChat. Plataforma SaaS completa com inteligência artificial, CRM Kanban integrado e automação para WhatsApp.",
       },
       { name: "author", content: "OfficeChat" },
       {
         property: "og:title",
-        content: "OfficeChat | Plataforma de Multiatendimento com IA",
+        content: "OfficeChat | Plataforma de Atendimento com IA, WhatsApp e CRM Kanban",
       },
       {
         property: "og:description",
         content:
-          "Centralize seu atendimento no WhatsApp, Instagram e Facebook em uma única tela com CRM Kanban e Inteligência Artificial.",
+          "Centralize seu atendimento multicanal com o OfficeChat. Plataforma SaaS completa com inteligência artificial, CRM Kanban integrado e automação para WhatsApp.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
