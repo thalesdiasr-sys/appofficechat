@@ -28,6 +28,7 @@ const plans = [
 const productSchema = {
   "@context": "https://schema.org",
   "@type": "Product",
+  "@id": `${canonical}#product`,
   name: "OfficeChat",
   description:
     "Plataforma de multiatendimento com Agentes de IA, CRM Kanban e integração com WhatsApp, Instagram e Facebook.",
@@ -44,6 +45,39 @@ const productSchema = {
   })),
 };
 
+const brandSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${canonical}#organization`,
+      name: "OfficeChat",
+      url: canonical,
+      description,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${canonical}#website`,
+      name: "OfficeChat",
+      url: canonical,
+      description,
+      inLanguage: "pt-BR",
+      publisher: { "@id": `${canonical}#organization` },
+    },
+    {
+      "@type": "WebPage",
+      "@id": `${canonical}#webpage`,
+      name: title,
+      url: canonical,
+      description,
+      inLanguage: "pt-BR",
+      isPartOf: { "@id": `${canonical}#website` },
+      about: { "@id": `${canonical}#organization` },
+      mainEntity: { "@id": `${canonical}#product` },
+    },
+  ],
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -53,10 +87,15 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://officechat.com.br" },
+      { property: "og:site_name", content: "OfficeChat" },
+      { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
     ],
     links: [{ rel: "canonical", href: canonical }],
     scripts: [
+      { type: "application/ld+json", children: JSON.stringify(brandSchema) },
       { type: "application/ld+json", children: JSON.stringify(productSchema) },
     ],
   }),

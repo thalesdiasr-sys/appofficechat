@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep homepage brand structured data in the leaf route head with stable canonical-based entity IDs, so search engines can associate the organization, website, page, and product without changing visible content.
