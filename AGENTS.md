@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Keep homepage brand structured data in the leaf route head with stable canonical-based entity IDs, so search engines can associate the organization, website, page, and product without changing visible content.
+- Keep page-specific titles, descriptions, social titles/descriptions, and canonical links in leaf route heads only; the root holds shared defaults to avoid inherited page metadata.
